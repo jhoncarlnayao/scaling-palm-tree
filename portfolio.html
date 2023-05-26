@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleport" href="styleport.css">
+
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+
+   
+:root {
+    --animate-duration:3s;
+}
+.my-element{
+    --animate-duration: 2s;
+}
+   ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 10;
+      overflow: hidden;
+      background-color: darkgray;
+    }
+    ul.navbar li {
+      float: left;
+    }
+
+    ul.navbar li a {
+      display: block;
+      padding: 25px;
+      text-decoration: none;
+      color: black;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    ul.navbar li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: black; /* Change the color as desired */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    ul.navbar li a:hover {
+      transform: translateY(-5px);
+    }
+
+    ul.navbar li a:hover::after {
+      transform: scaleX(1);
+    }
+    nav {
+      font-family: arial bold;
+      font-size: 25px;
+      display: block;
+      text-decoration: none;
+      background-color: darkgray;
+
+      color: black;
+    }
+
+    ul {
+      font-family: arial bold;
+    }
+    h1 {
+    position:absolute;
+    top: 24%;
+    left: 4%;   
+    font-family: sans;
+    }
+    h2 {
+        position: absolute;
+        top: 29%;
+        left: 4%;
+        font-family: sans;
+        font-size:small;
+    }
+    div{
+        position: absolute;
+        top:30%;
+        left: 4%;
+    font-family: sans;
+    font-size: large;
+    }
+</style>
+
+<body>
+   <ul class="navbar">
+      <li>
+        <a href="#Home"><b>Home</b></a>
+      </li>
+      <li>
+        <a href="#ABOUT"><b>About</b></a>
+      </li>
+      <li>
+        <a href="#CONTACT"><b>Contact</b></a>
+      </li>
+      <li>
+        <a href="#SOCIAL MEDIA"><b>Social Media</b></a>
+      </li>
+    </ul>
+    
+
+    <h1>   JHON CARL NAYAO  </h1>
+    <h2> Bachelor of Science in Information Technology</h2>
+   
+<div class="text animate__animated animate__flash ">
+    <h3>JUST A STUDENT</h3>
+</div>
+    
+</body>
+</html>
